@@ -1,5 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    const closeMobileMenu = () => {
+        if (!hamburger || !navMenu) return;
+        navMenu.classList.remove('is-open');
+        hamburger.classList.remove('is-active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Abrir menú');
+    };
+
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            const isOpen = navMenu.classList.toggle('is-open');
+            hamburger.classList.toggle('is-active', isOpen);
+            hamburger.setAttribute('aria-expanded', String(isOpen));
+            hamburger.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') closeMobileMenu();
+        });
+    }
 
     // Smooth scroll para los links del navbar
     const navLinks = document.querySelectorAll('a[href^="#"]');
@@ -18,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
             }
+            closeMobileMenu();
         });
     });
 
