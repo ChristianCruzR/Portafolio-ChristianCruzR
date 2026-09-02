@@ -845,6 +845,151 @@ body > section {
     }
 }
 
+/* Portada y navegación optimizadas para celular */
+@media (max-width: 768px) {
+    .hamburger {
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger span {
+        transition: transform 0.25s ease, opacity 0.2s ease;
+    }
+
+    .hamburger.is-active span:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg);
+    }
+
+    .hamburger.is-active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.is-active span:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg);
+    }
+
+    .nav-menu.is-open {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.75rem 20px 1rem;
+        background: rgba(255, 255, 255, 0.98);
+        border-top: 1px solid var(--border);
+        box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+        backdrop-filter: blur(14px);
+    }
+
+    .nav-menu.is-open li {
+        width: 100%;
+    }
+
+    .nav-menu.is-open .nav-link {
+        display: block;
+        width: 100%;
+        padding: 0.8rem 0.4rem;
+    }
+
+    .hero {
+        padding: 34px 20px 44px;
+    }
+
+    .hero-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+        width: 100%;
+    }
+
+    .hero-text {
+        display: contents;
+    }
+
+    .hero-title {
+        order: 1;
+        margin-bottom: 0.8rem;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        order: 2;
+        margin-bottom: 0.9rem;
+        text-align: center;
+    }
+
+    .hero-specialties {
+        order: 3;
+        justify-content: center;
+        margin-bottom: 1.4rem;
+    }
+
+    .hero-photo-container {
+        order: 4;
+        margin-bottom: 1.4rem;
+    }
+
+    .hero-photo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .hero-badges {
+        align-items: center;
+        gap: 8px;
+        margin-top: 14px;
+    }
+
+    .hero-badge {
+        max-width: 100%;
+        padding: 8px 12px;
+        gap: 7px;
+        border-radius: 18px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .hero-badge span {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        order: 5;
+        max-width: 520px;
+        margin: 0 auto 1.35rem;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        order: 6;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.65rem;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: auto;
+        min-width: 0;
+        min-height: 42px;
+        padding: 10px 14px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    .hero-buttons .btn-cv {
+        grid-column: 1 / -1;
+        justify-self: center;
+        padding-inline: 22px;
+    }
+}
+
 @media (max-width: 480px) {
     .nav-logo {
         font-size: 1.1rem;
@@ -964,6 +1109,10 @@ body > section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mobile-hero-photo {
+    display: none;
 }
 
 .hero-photo {
@@ -1174,5 +1323,82 @@ body > section {
     .modal-content {
         padding: 30px;
         margin: 20px;
+    }
+
+    /* Mantener estos tamaños por encima de estilos móviles anteriores */
+    .hero-content {
+        gap: 0;
+    }
+
+    .hero-photo {
+        width: 170px;
+        height: 170px;
+    }
+
+    /* Orden exclusivo para la portada móvil */
+    .hero-photo-container,
+    .hero-photo-container > div {
+        display: contents;
+    }
+
+    .hero-title {
+        order: 1;
+    }
+
+    .hero-photo {
+        order: 2;
+        justify-self: center;
+        margin: 0 auto 1.25rem;
+    }
+
+    .hero-subtitle {
+        order: 3;
+    }
+
+    .hero-specialties {
+        order: 4;
+    }
+
+    .hero-description {
+        order: 5;
+    }
+
+    .hero-buttons {
+        order: 6;
+    }
+
+    .hero-badges {
+        order: 7;
+        margin-top: 1.4rem;
+    }
+
+    /* Foto móvil independiente: inmediatamente después del nombre */
+    .mobile-hero-photo {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1.25rem;
+    }
+
+    .mobile-hero-photo .hero-photo {
+        display: block;
+        margin: 0;
+    }
+
+    .hero-photo-container,
+    .hero-photo-container > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-photo-container {
+        order: 7;
+        margin: 0;
+    }
+
+    .hero-photo-container > div > .hero-photo {
+        display: none;
     }
 }
