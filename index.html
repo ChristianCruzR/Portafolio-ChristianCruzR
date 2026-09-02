@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian De La Cruz - Profesional de Marketing & Comunicación</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+</head>
+<body>
+    <!-- Barra de navegación flotante -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#inicio" class="nav-logo">ChristianCruzR</a>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#perfil" class="nav-link">Perfil</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#contacto" class="nav-link nav-contact">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero con flujo visual -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-name-line hero-name-first">Christian Edmundo</span>
+                    <span class="hero-name-line hero-name-last">De La Cruz Ruiz</span>
+                </h1>
+                <p class="hero-subtitle">Comunicador • Trafficker en Marketing Digital • Diseñador Gráfico</p>
+                <div class="hero-specialties" aria-label="Experiencia comercial">
+                    <span class="specialty-label">Experiencia comercial</span>
+                    <span class="specialty-badge">B2B</span>
+                    <span class="specialty-badge">B2C</span>
+                </div>
+                <p class="hero-description">Profesional con experiencia comprobada en estrategias de marketing, gestión de redes sociales y producción audiovisual. Licenciado en Ciencias de la Comunicación con habilidades técnicas en diseño y programación.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Hablemos</a>
+                    <a href="#experiencia" class="btn btn-secondary">Ver experiencia</a>
+                    <button onclick="openCVModal()" class="btn btn-cv"><span aria-hidden="true">📥</span> Descargar CV</button>
+                </div>
+            </div>
+            <div class="hero-photo-container">
+                <div>
+                    <img src="foto.JPG" alt="Christian De La Cruz" class="hero-photo">
+                    <div class="hero-badges">
+                        <div class="hero-badge">
+                            <span>🎓</span> Licenciado en Comunicación SUNEDU
+                        </div>
+                        <div class="hero-badge">
+                            <span>🚙</span> Movilidad: Camioneta
+                        </div>
+                        <div class="hero-badge">
+                            <span>✅</span> Disponibilidad Completa
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="metrics-section" aria-labelledby="metrics-title">
+        <div class="metrics-container">
+            <h2 id="metrics-title">Experiencia en cifras</h2>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number">6+</span>
+                    <p class="stat-label">Años de<br>Experiencia</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">8</span>
+                    <p class="stat-label">Empresas<br>Trabajadas</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">20+</span>
+                    <p class="stat-label">Proyectos<br>Completados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Perfil -->
+    <section id="perfil" class="perfil">
+        <div class="container">
+            <div class="perfil-grid">
+                <div class="perfil-text">
+                    <h2>Mi Perfil Profesional</h2>
+                    <p>Soy un Comunicador licenciado por la Universidad Tecnológica del Perú con formación técnica complementaria. He desempeñado roles estratégicos en empresas de diversos sectores, liderando iniciativas de marketing digital, comunicación corporativa y producción audiovisual.</p>
+                    <p>Mi fortaleza radica en la capacidad de alinear objetivos comerciales con estrategias de comunicación efectivas, utilizando herramientas digitales modernas y análisis de datos para maximizar resultados.</p>
+                    <p>Busco oportunidades en roles de comunicación, marketing, diseño o tecnología donde pueda contribuir con mi experiencia multidisciplinaria.</p>
+                </div>
+                <div class="perfil-info">
+                    <div class="info-box">
+                        <h3>📍 Ubicación</h3>
+                        <p>Jesús María, Lima - Perú</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:chrisdcr13@gmail.com">chrisdcr13@gmail.com</a></p>
+                    </div>
+                    <div class="info-box">
+                        <h3>📱 Teléfono</h3>
+                        <p><a href="tel:+51995551000">+51 995 551 000</a></p>
+                    </div>
+                    <div class="info-box">
+                        <h3>🎓 Educación</h3>
+                        <p>Lic. Ciencias Comunicación<br>UTP (2019-2023)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia Destacada -->
+    <section id="experiencia" class="experiencia">
+        <div class="container">
+            <h2>Trayectoria Profesional</h2>
+            <div class="experiencia-cards">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Analista de Marketing</h3>
+                        <span class="exp-badge">Último Trabajo</span>
+                    </div>
+                    <p class="exp-company">Salus Preventiva</p>
+                    <p class="exp-period">Jun 2025 - Dic 2025</p>
+                    <ul class="exp-tasks">
+                        <li>Reestructuración del Área de Marketing</li>
+                        <li>Gestión de campañas en Meta, Google Ads y LinkedIn</li>
+                        <li>Creación y actualización de páginas web</li>
+                        <li>Estrategia B2B para empresa de servicios</li>
+                    </ul>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Analista de Marketing</h3>
+                    </div>
+                    <p class="exp-company">Biocombustibles H2O SAC</p>
+                    <p class="exp-period">Nov 2024 - Mar 2025</p>
+                    <ul class="exp-tasks">
+                        <li>Campañas en Meta Ads y gestión de RR.SS.</li>
+                        <li>Implementación Plan de Comunicaciones 2025</li>
+                        <li>Producción audiovisual y fotográfica</li>
+                        <li>Propuesta de nuevo organigrama y procesos</li>
+                    </ul>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Social Media Coaches</h3>
+                    </div>
+                    <p class="exp-company">Atmósfera Rooftop</p>
+                    <p class="exp-period">Abr 2024 - Oct 2024</p>
+                    <ul class="exp-tasks">
+                        <li>Planificación y organización de recursos</li>
+                        <li>Publicación de contenido programado</li>
+                        <li>Consultoría a equipo de Marketing y Diseño</li>
+                    </ul>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Encargado de Marketing</h3>
+                    </div>
+                    <p class="exp-company">CEAR Latinoamericano</p>
+                    <p class="exp-period">Nov 2023 - Mar 2024</p>
+                    <ul class="exp-tasks">
+                        <li>Programador/Diseñador Web</li>
+                        <li>Preproducción y postproducción audiovisual</li>
+                        <li>Gestión de redes sociales y anuncios</li>
+                    </ul>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Administrador</h3>
+                    </div>
+                    <p class="exp-company">FuelBar y Cafetería</p>
+                    <p class="exp-period">Sep 2022 - Sep 2023</p>
+                    <ul class="exp-tasks">
+                        <li>Planificación y gestión de recursos</li>
+                        <li>Liderazgo y motivación de equipo</li>
+                        <li>Toma de decisiones estratégicas</li>
+                        <li>Administración de presupuestos</li>
+                    </ul>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Otras Experiencias</h3>
+                    </div>
+                    <ul class="exp-tasks">
+                        <li><strong>Tercero Licitación</strong> - Ministerio de Cultura (Jun-Jul 2020)</li>
+                        <li><strong>Diseñador Freelance</strong> - Independiente (Dic 2018 - Jul 2020)</li>
+                        <li><strong>Censador</strong> - ONPE (Oct 2017)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades Fluida -->
+    <section id="habilidades" class="habilidades">
+        <div class="container">
+            <h2>Competencias & Habilidades</h2>
+            
+            <div class="habilidades-categoria">
+                <h3 class="categoria-titulo">Marketing & Comunicación</h3>
+                <div class="skills-flow">
+                    <div class="skill-tag">Marketing Digital</div>
+                    <div class="skill-tag">Meta Ads</div>
+                    <div class="skill-tag">Google Ads</div>
+                    <div class="skill-tag">LinkedIn Ads</div>
+                    <div class="skill-tag">Community Management</div>
+                    <div class="skill-tag">Redes Sociales</div>
+                    <div class="skill-tag">Redacción</div>
+                    <div class="skill-tag">Comunicación Corporativa</div>
+                    <div class="skill-tag">Estrategia de Contenido</div>
+                </div>
+            </div>
+
+            <div class="habilidades-categoria">
+                <h3 class="categoria-titulo">Diseño & Audiovisual</h3>
+                <div class="skills-flow">
+                    <div class="skill-tag">Adobe Photoshop</div>
+                    <div class="skill-tag">Adobe Illustrator</div>
+                    <div class="skill-tag">Adobe Premiere</div>
+                    <div class="skill-tag">Adobe InDesign</div>
+                    <div class="skill-tag">Diseño Web</div>
+                    <div class="skill-tag">Identidad Visual</div>
+                    <div class="skill-tag">Producción Audiovisual</div>
+                    <div class="skill-tag">Fotografía</div>
+                </div>
+            </div>
+
+            <div class="habilidades-categoria">
+                <h3 class="categoria-titulo">Técnicas & Programación</h3>
+                <div class="skills-flow">
+                    <div class="skill-tag">WordPress</div>
+                    <div class="skill-tag">Base de Datos</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">C++</div>
+                    <div class="skill-tag">.NET</div>
+                    <div class="skill-tag">Ofimática</div>
+                    <div class="skill-tag">Programación Web</div>
+                </div>
+            </div>
+
+            <div class="habilidades-categoria">
+                <h3 class="categoria-titulo">Blandas</h3>
+                <div class="skills-flow">
+                    <div class="skill-tag">Liderazgo</div>
+                    <div class="skill-tag">Comunicación Efectiva</div>
+                    <div class="skill-tag">Trabajo en Equipo</div>
+                    <div class="skill-tag">Resolución de Problemas</div>
+                    <div class="skill-tag">Toma de Decisiones</div>
+                    <div class="skill-tag">Organización</div>
+                    <div class="skill-tag">Adaptabilidad</div>
+                </div>
+            </div>
+
+            <div class="idiomas-section">
+                <h3 class="categoria-titulo">Idiomas</h3>
+                <div class="idiomas-grid">
+                    <div class="idioma-card">
+                        <p class="idioma-nombre">Español</p>
+                        <p class="idioma-nivel">Nativo</p>
+                    </div>
+                    <div class="idioma-card">
+                        <p class="idioma-nombre">Inglés</p>
+                        <p class="idioma-nivel">Intermedio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Conectemos</h2>
+            <p class="contacto-subtitle">Estoy disponible para oportunidades en comunicación, marketing, diseño y tecnología</p>
+            
+            <div class="contacto-content">
+                <form class="contacto-form" id="contactForm" action="https://formspree.io/f/mvkoakjw" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Enviar Mensaje</button>
+                </form>
+
+                <div class="contacto-directos">
+                    <a href="mailto:chrisdcr13@gmail.com" class="contacto-directo">
+                        <span class="contacto-icono">📧</span>
+                        <div>
+                            <p class="contacto-label">Email</p>
+                            <p class="contacto-valor">chrisdcr13@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+51995551000" class="contacto-directo">
+                        <span class="contacto-icono">📱</span>
+                        <div>
+                            <p class="contacto-label">Teléfono</p>
+                            <p class="contacto-valor">+51 995 551 000</p>
+                        </div>
+                    </a>
+                    <div class="contacto-directo">
+                        <span class="contacto-icono">📍</span>
+                        <div>
+                            <p class="contacto-label">Ubicación</p>
+                            <p class="contacto-valor">Jesús María, Lima</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Christian De La Cruz. Disponible para nuevas oportunidades profesionales.</p>
+    </footer>
+
+    <!-- Modal para descargar CV -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeCVModal()">&times;</span>
+            <h2>📄 Descargar Mi CV</h2>
+            <p>Obtén una copia completa de mi experiencia, educación y habilidades.</p>
+            <a href="CV-ChristianCruzR.pdf" download class="cv-download-btn">📥 Descargar CV</a>
+        </div>
+    </div>
+    
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/51995551000?text=Hola%20Christian%2C%20me%20gustaría%20conversar" class="whatsapp-btn" title="Contactarme por WhatsApp">💬</a>
+    <script src="styles.js"></script>
+</body>
+</html>
