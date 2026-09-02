@@ -1312,6 +1312,15 @@ body > section {
 }
 
 @media (max-width: 768px) {
+    html {
+        scroll-snap-type: none;
+    }
+
+    body > section {
+        scroll-snap-align: none;
+        scroll-snap-stop: normal;
+    }
+
     .whatsapp-btn {
         bottom: 20px;
         right: 20px;
